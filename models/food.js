@@ -1,8 +1,10 @@
-Const foodSchema = new mongoose.Schema({
+const mongoose = require ("mongoose")
+
+const foodSchema = new mongoose.Schema({
     name: String,
-    isGoodToEat: Boolean;
+    isGoodToEat: Boolean
     })
     
-    Const Food = mongoose.model(‘Food’, foodSchema) ///create model
+    const Food = mongoose.model("Food", foodSchema) ///create model
     
     module.exports = Food
