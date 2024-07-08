@@ -1,0 +1,16 @@
+
+    <h1>Edit <%= food.name %></h1>
+    <form action="/foods/<%=food_id%>?_method=PUT" method="POST">
+
+      <label hidden for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="name" value="<%= food.name %>" />
+  
+      <label for="isGoodToEat">Good to Eat?</label>
+      <input type="checkbox" name="isGoodToEat" id="isGoodToEat" <% if (food.isGoodToEat) { %>checked<% } %> />
+
+
+      <button type="submit">Edit Food</button>
+    </form>
+    <a href="/food">Back to Food</a>
+  </body>
+   

@@ -9,12 +9,7 @@
   </head>
   <body>
     <h1>Create a New Dish!</h1>
-    <ul> 
-        <% foods.forEach(food => { %>
-                <li><%= food.name %></li>
-         <% }) %>
-    <ul>
-    <form action="/food" method="POST">
+    <form action="/foods" method="POST">
       <label for="name">Name:</label>
       <input type="text" name="name" id="name" />
   
@@ -27,17 +22,3 @@
 </html>
 
 
-
-<body>
-    <h1>Create a New Fruit!</h1>
-    <form action="/food" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name" />
-  
-      <label for="isReadyToEat">Ready to Eat?</label>
-      <input type="checkbox" name="isReadyToEat" id="isReadyToEat" />
-  
-      <button type="submit">Add Fruit</button>
-    </form>
-  </body>
-  
